@@ -15,6 +15,6 @@ public class Main {
             array[i] = value;
             sumOfWords += array[i].length();
         }
-        System.out.println("Your average length is: " + sumOfWords/quantityOfLines);
+        System.out.println("String average length is: " + sumOfWords/quantityOfLines);
     }
 }

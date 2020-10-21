@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Первый операнд - ");
+        System.out.print("First operand: ");
         int operand1 = sc.nextInt();
-        System.out.print("Второй операнд - ");
+        System.out.print("Second operand: ");
         int operand2 = sc.nextInt();
-        System.out.print("Знак : ");
+        System.out.print("Symbol: ");
         String operation = sc.next();
 
         switch (operation) {
@@ -26,7 +26,7 @@ public class Main {
                 div(operand1, operand2);
                 break;
             default:
-                System.out.println("Не известная команда!");
+                System.out.println("Unknown operation! ");
         }
     }
 
@@ -44,7 +44,7 @@ public class Main {
 
     public static void div(int operand1, int operand2) {
         if (operand2 == 0) {
-            System.out.println("Делить на 0 запрещено");
+            System.out.println("It is forbidden to divide by 0");
         }
         System.out.println(operand1 + " / " + operand2 + " = " + (operand1 / operand2));
     }
