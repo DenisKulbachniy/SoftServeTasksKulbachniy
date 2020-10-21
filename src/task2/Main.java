@@ -16,12 +16,13 @@ public class Main {
             for (int i = 0; i < quantityOfLines; i++) {
                 System.out.println("Enter value");
                 String value = sc.next();
-                    sumOfWords += array[i].length();
-                }
-                System.out.println("String average length is: " + sumOfWords / quantityOfLines);
-        }
-        catch (InputMismatchException er){
+                sumOfWords += array[i].length();
+            }
+            System.out.println("String average length is: " + sumOfWords / quantityOfLines);
+        } catch (InputMismatchException er) {
             System.out.println("Can`t operate this");
+        } catch (NullPointerException er2) {
+            System.out.println("Cant operate this");
         }
     }
 }
